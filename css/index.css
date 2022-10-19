@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f4f4f4;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    padding: 12px 12px 6px;
+}
+._next{
+    max-width: 100%;
+    padding: 0px 12px;
+    background:linear-gradient(#ffffff 35%,#f4f4f4 40%);
+}
+.style-fff {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+/* 搜索模块 */
+.search-index {
+    /* 固定定位跟父级没有关系，跟屏幕有关系 */
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    padding: 12px 12px 6px;
+    box-sizing: border-box;
+}
+
+.search-index-box {
+    display: flex;
+    flex: 1;
+    height: 28px;
+    border-radius: 16px;
+    border: 1.8px solid #0086f6;
+    color: #666;
+    align-items: center;
+}
+
+.search-index-box i::before {
+    font-family: "iconfont";
+    content: "\e6a2";
+    font-size: 21px;
+    margin-left: 12px;
+}
+
+.search-index-box span {
+    margin-left: 6px;
+    line-height: 21px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* 导航栏 */
+.main-nav {
+    width: 100%;
+    margin-top: 6px;
+    border-radius: 15px 15px 0 0;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 6px; */
+    /* border-radius: 30px; */
+}
+
+.nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    width: 100%;
+    height: 58px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li a {
+    display: flex;
+    flex-direction: column;
+    /* 侧轴居中对齐 */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+.nav-icon {
+    width: 28px;
+    height: 28px;
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+/* 特价/精选 */
+.sub-banner{
+    display: flex;
+    /* background-color: #f4f4f4; */
+    padding: 0 12px;
+    margin: 10px 0px 10px -8px;
+
+}
+.sub-banner .banner{
+    position: relative;
+    flex: 1;
+    width: 50%;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 8px;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sub-banner .banner a{
+    display: flex;
+    height: 20px;
+    margin-bottom: 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-banner .banner a img{
+    width: 73px;
+    height: 20px;
+}
+.sub-banner .banner a div{
+    height: 16px;
+    line-height: 16px;
+    border-radius: 2px;
+    font-size: 10px;
+    background: #ffebe3;
+    color: #ff4607;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+.sub-banner .banner .slider{
+    width: 100%;
+}
+.sub-banner .banner .slider-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    width: 100%;
+    height:  84px;    
+}
+.sub-banner .banner .slider-img  img{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 238px;
+    height: 238px;
+}
+.sub-banner .banner .slider span{
+    color: #ff6702;
+    font-weight: 800;
+    font-size: 20px;
+}
+.sub-banner .rank-item .block-img{
+    position: relative;
+    height: 84px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sub-banner .rank-item .block-img img{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 84px;
+}
+
+
+
+
+
+
+
+/* 关注抽奖 */
+.ad-banner {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.ad-banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* 底部 */
+.toolbox {
+    padding-top: 12px;
+    padding-bottom: 50px;
+}
+
+.tool-group {
+    width: 100%;
+    height: 32px;
+    max-width: 540px;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 12px;
+}
+
+.tool-group a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    min-width: 100px;
+}
+
+.tool-group-ico1::before {
+    font-family: "iconfont";
+    content: '\e667';
+}
+
+.tool-group-ico2::before {
+    font-family: "iconfont";
+    content: '\e65d';
+}
+
+.tool-ver{
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 13px;
+}
+.tool-ver a{
+    color: #666;
+}
+.tool-ver a:nth-child(1):after{
+    content: '';
+    padding-right: 24px;
+    margin-right: 24px;
+}
+
+.tool-ver p{
+    margin-top: 16px;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 12px;
+}
+.tool-ver span::before{
+    content: '';
+    padding-left: 2px;
+    margin-left:2px ;
+}
+/* 底部快捷导航 */
+.tabbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 49px;
+    max-width: 540px;
+    min-width: 320px;
+    margin:0 auto;
+    justify-content:space-around;
+    background-color: #fff;
+}
+.tabbar a{
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    color: #666;
+    font-size: 12px;
+    line-height: 12px;
+}
+.tabbar [class^=icon-] {
+    width: 32px;
+    height: 32px;
+    background-size: 32px auto;
+    background-image:  url(../images/tabbar.png);
+}
+
+.tabbar .icon-home{
+    background-position: 0px 0px;
+}
+.tabbar .icon-community{
+    background-position: 0px -32px;
+}
+.tabbar .icon-message{
+    background-position: 0px -64px;
+}
+.tabbar .icon-myctrip{
+    background-position: 0px -96px;
+}
